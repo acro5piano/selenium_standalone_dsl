@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    selenium_standalone_dsl (0.1.0)
+    selenium_standalone_dsl (0.1.1)
 
 GEM
   remote: https://rubygems.org/

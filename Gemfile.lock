@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    selenium_standalone_dsl (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,12 +68,14 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  bundler (~> 1.12)
   headless
   nokogiri
   pry
   rake
   rspec
   selenium-webdriver
+  selenium_standalone_dsl!
   sinatra
 
 BUNDLED WITH

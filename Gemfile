@@ -12,3 +12,5 @@ group :development, :staging do
   gem 'sinatra'
 end
 
+gemspec
+

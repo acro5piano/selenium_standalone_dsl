@@ -6,6 +6,18 @@ Gem for using Selenium webdriver simply.
 
 ## Installation
 
+Ensure you already install Firefox:
+
+```sh
+sudo apt-get install firefox
+```
+
+If you want to run firefox headlessly, install Xvfb:
+
+```sh
+sudo apt-get install xvfb
+```
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -14,11 +26,15 @@ gem 'selenium_standalone_dsl'
 
 And then execute:
 
-    $ bundle
+```sh
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install selenium_standalone_dsl
+```sh
+gem install selenium_standalone_dsl
+```
 
 ## Usage
 
@@ -47,12 +63,15 @@ driver.search_wikipedia
 
 ## Development
 
-    $ git clone git@github.com:acro5piano/selenium_standalone_dsl.git
-    $ cd selenium_standalone_dsl
-    $ bundle install --path vendor/bundle
-    $ bundle exec rake
+```sh
+git clone git@github.com:acro5piano/selenium_standalone_dsl.git
+cd selenium_standalone_dsl
+bundle install --path vendor/bundle
+bundle exec rake install
+bundle exec rake spec
+```
     
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 

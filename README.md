@@ -90,6 +90,30 @@ I will create `Selenium Spider` after completed `Selenium Standalone DSL`.
 
 There are a lot of tools such as `mechanize` but they are no longer useful for SPA websites.
 
+In my heart, `Selenium Spider` will have these features:
+
+### Full JavaScript support
+
+Based on Selenium Standalone DSL, it can complehence JavaScript.
+
+### PMC architecture
+
+PMC = Pagination Model Controller
+
+Generally, scraping is consist of two parts: Listing page and Detail page.
+
+In PMC architecture, Page is for listing items and pagenation.
+
+Model is for extracting information from detail page and store data to database.
+
+Controller is for handle the above two.
+
+### Web-based task execution
+
+Scraping tasks are often multiply and difficult to arrange.
+
+Imagine Web-based task execution, definition, and scheduling like Jenkins.
+
 ## TODO
 
 - [ ] Fix class name. Dsl => DSL

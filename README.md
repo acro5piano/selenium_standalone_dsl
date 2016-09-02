@@ -82,6 +82,20 @@ bundle exec rake spec
     
 To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## Roadmap
+
+I will create `Selenium Spider` after completed `Selenium Standalone DSL`.
+
+`Selenium Spider` aims to scrape websites using JavaScript.
+
+There are a lot of tools such as `mechanize` but they are no longer useful for SPA websites.
+
+## TODO
+
+- [ ] Fix class name. Dsl => DSL
+- [ ] Log and config
+- [ ] TravisCI
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/acro5piano/selenium_standalone_dsl. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

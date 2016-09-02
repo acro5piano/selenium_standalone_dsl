@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/selenium_standalone_dsl.svg)](https://badge.fury.io/rb/selenium_standalone_dsl)
+
 # SeleniumStandaloneDsl
 
 Gem for using Selenium webdriver simply.
@@ -20,12 +22,35 @@ Or install it yourself as:
 
 ## Usage
 
-(Coming soon)
+```rb
+class YahooSearcher < SeleniumStandaloneDsl::Base
+  def search_wikipedia
+    fill_in 'p', with: 'wikipedia'
+    click 'IconNavSearch', find_by: :css
+    click 'Next'
+  end
+end
+
+config = {
+  log_path: '/tmp/selenium_standalone_dsl_spec.log',
+  user_agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36',
+  headless: true,
+}
+
+driver = YahooSearcher.new(config)
+driver.search_wikipedia
+
+# => New firefox instance will start headlessly
+
+```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
+    $ git clone git@github.com:acro5piano/selenium_standalone_dsl.git
+    $ cd selenium_standalone_dsl
+    $ bundle install --path vendor/bundle
+    $ bundle exec rake
+    
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing

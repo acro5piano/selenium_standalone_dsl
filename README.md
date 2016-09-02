@@ -25,6 +25,7 @@ Or install it yourself as:
 ```rb
 class YahooSearcher < SeleniumStandaloneDsl::Base
   def search_wikipedia
+    visit 'https://www.yahoo.com/'
     fill_in 'p', with: 'wikipedia'
     click 'IconNavSearch', find_by: :css
     click 'Next'
@@ -32,7 +33,7 @@ class YahooSearcher < SeleniumStandaloneDsl::Base
 end
 
 config = {
-  log_path: '/tmp/selenium_standalone_dsl_spec.log',
+  log_path: '/tmp/selenium_standalone_dsl.log',
   user_agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36',
   headless: true,
 }

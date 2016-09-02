@@ -6,7 +6,7 @@ Gem for using Selenium webdriver simply.
 
 ## Installation
 
-Ensure you already install Firefox:
+Ensure you have already installed Firefox:
 
 ```sh
 sudo apt-get install firefox

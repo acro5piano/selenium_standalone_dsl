@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["gosho-kazuya"]
   spec.email         = ["ketsume0211@gmail.com"]
 
-  spec.summary       = %q{Simple gem for using Selenium webdriver simply}
-  spec.description   = %q{Simple gem for using Selenium webdriver simply}
+  spec.summary       = %q{Gem for using Selenium webdriver simply}
+  spec.description   = %q{Gem for using Selenium webdriver simply}
   spec.homepage      = "https://github.com/acro5piano/selenium_standalone_dsl"
   spec.license       = "MIT"
 

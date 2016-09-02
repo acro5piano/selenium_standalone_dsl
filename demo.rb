@@ -4,7 +4,6 @@ require 'selenium_standalone_dsl'
 class YahooSearcher < SeleniumStandaloneDsl::Base
   def search_for_wikipedia
     visit 'https://www.yahoo.com/'
-
     fill_in 'p', with: 'wikipedia'
 
     # You can declare how to find elements: [class|id|css|xpath]

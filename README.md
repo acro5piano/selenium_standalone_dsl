@@ -1,6 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/selenium_standalone_dsl.svg)](https://badge.fury.io/rb/selenium_standalone_dsl)
 
-# SeleniumStandaloneDsl
+# Selenium Standalone DSL
 
 Gem for using Selenium webdriver simply.
 

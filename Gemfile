@@ -9,5 +9,6 @@ gem 'rake'
 group :development, :staging do
   gem 'pry'
   gem 'rspec'
+  gem 'sinatra'
 end
 

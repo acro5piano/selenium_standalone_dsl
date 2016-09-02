@@ -84,7 +84,7 @@ To release a new version, update the version number in `version.rb`, and then ru
 
 ## Roadmap
 
-I will create `Selenium Spider` after completed `Selenium Standalone DSL`.
+I will create `Selenium Spider` after completing `Selenium Standalone DSL`.
 
 `Selenium Spider` aims to scrape websites using JavaScript.
 
@@ -94,7 +94,7 @@ In my heart, `Selenium Spider` will have these features:
 
 ### Full JavaScript support
 
-Based on Selenium Standalone DSL, it can complehence JavaScript.
+Based on Selenium Standalone DSL, it comprehences JavaScript.
 
 ### PMC architecture
 

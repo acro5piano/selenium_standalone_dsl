@@ -72,6 +72,25 @@ driver.search_for_wikipedia
 
 ```
 
+
+## Supported API
+
+| Method   | Summary                           | Arguments                | Remarks                        |
+|----------|-----------------------------------|--------------------------|--------------------------------|
+| click    | Click a button or link            | text of link, name, etc. |                                |
+| select   | Choose an option in select box    | option text              |                                |
+| visit    | Navigate firefox to a link        |                          |                                |
+| fill\_in | Fill in a input box               | element name             |                                |
+| search   | Search page source using Nokogiri |                          | Returns Nokogiri::XML::Element |
+
+### Options
+
+| Name      | Argument                                      | Defalut     |
+| :find\_by | :link\_text, :name, :id, :class, :css, :xpath | :link\_text |
+
+
+
+
 ## Development
 
 ```sh
@@ -120,7 +139,7 @@ Imagine Web-based task execution, definition, csv-export and scheduling like Jen
 
 - [x] Fix module name. Dsl => DSL
 - [x] Defalut config
-- [ ] Add API document
+- [x] Add API document
 - [ ] TravisCI
 - [ ] Log
 

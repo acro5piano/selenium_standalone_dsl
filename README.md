@@ -5,6 +5,10 @@
 
 Gem for using Selenium webdriver simply.
 
+Let's scrape sites using JavaScript and iframe!
+
+This project aims to expanding Selenium and Nokogiri.
+
 ## Installation
 
 Ensure you have already installed Firefox:

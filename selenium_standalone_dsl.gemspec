@@ -5,7 +5,7 @@ require 'selenium_standalone_dsl/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "selenium_standalone_dsl"
-  spec.version       = SeleniumStandaloneDsl::VERSION
+  spec.version       = SeleniumStandaloneDSL::VERSION
   spec.authors       = ["gosho-kazuya"]
   spec.email         = ["ketsume0211@gmail.com"]
 

@@ -118,10 +118,11 @@ Imagine Web-based task execution, definition, csv-export and scheduling like Jen
 
 ## TODO
 
-- [ ] Fix class name. Dsl => DSL
-- [ ] Log and config
-- [ ] TravisCI
+- [x] Fix module name. Dsl => DSL
+- [x] Defalut config
 - [ ] Add API document
+- [ ] TravisCI
+- [ ] Log
 
 ## Contributing
 

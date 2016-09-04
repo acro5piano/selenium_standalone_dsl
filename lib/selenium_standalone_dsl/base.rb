@@ -2,15 +2,12 @@ module SeleniumStandaloneDSL
   class Base
     attr_reader :driver
 
-    # @param  Hash config
-    #         config = {
-    #             log_path: '/path/to/logs',
-    #             user_agent: 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36',
-    #         }
-    def initialize(config)
-      # Initialize instance variables
-      @config = config
-      @logger = Logger.new(@config[:log_path])
+    def initialize(log_path: '/tmp/selenium_standalone_dsl',
+                   user_agent: 'Selenium Standalone DSL', headless: false)
+
+      if headless
+        Headless.new(reuse: false, destroy_at_exit: true).start
+      end
 
       # Extends timeout
       client = Selenium::WebDriver::Remote::Http::Default.new
@@ -18,17 +15,13 @@ module SeleniumStandaloneDSL
 
       # Create profile so that each driver instance has its own cookie
       profile = Selenium::WebDriver::Firefox::Profile.new
-      profile['general.useragent.override'] = @config[:user_agent]
+      profile['general.useragent.override'] = user_agent
       profile.native_events = true
-
-      if @config[:headless]
-        headless = Headless.new(reuse: false, destroy_at_exit: true)
-        headless.start
-      end
 
       @driver = Selenium::WebDriver::Driver.for(:firefox, :http_client => client, :profile => profile)
 
-      @logger.info '=' * 150
+      @logger = Logger.new(log_path)
+      @logger.info '=' * 100
       @logger.info 'SeleniumStandaloneDsl started'
     end
 
@@ -116,10 +109,6 @@ module SeleniumStandaloneDSL
 
     def quit
       @driver.quit
-      if @config[:headless]
-        headless = Headless.new(reuse: false, destroy_at_exit: true)
-        headless.start
-      end
     end
   end
 end

@@ -39,6 +39,8 @@ gem install selenium_standalone_dsl
 ## Usage
 
 ```rb
+require selenium_standalone_dsl'
+
 class YahooSearcher < SeleniumStandaloneDsl::Base
   def search_for_wikipedia
     visit 'https://www.yahoo.com/'

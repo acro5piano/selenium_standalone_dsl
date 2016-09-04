@@ -6,6 +6,6 @@ require 'nokogiri'
 require 'headless'
 
 
-module SeleniumStandaloneDsl
+module SeleniumStandaloneDSL
   ROOT_DIR = File.dirname(ENV['BUNDLE_GEMFILE']) || File.expand_path('../../', __FILE__)
 end

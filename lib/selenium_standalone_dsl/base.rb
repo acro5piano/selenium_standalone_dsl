@@ -1,4 +1,4 @@
-module SeleniumStandaloneDsl
+module SeleniumStandaloneDSL
   class Base
     attr_reader :driver
 

@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/selenium_standalone_dsl.svg)](https://badge.fury.io/rb/selenium_standalone_dsl)
+[![Build Status](https://travis-ci.org/acro5piano/selenium_standalone_dsl.svg?branch=master)](https://travis-ci.org/acro5piano/selenium_standalone_dsl)
 
 # Selenium Standalone DSL
 

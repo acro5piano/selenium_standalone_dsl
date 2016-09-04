@@ -84,7 +84,7 @@ driver.search_for_wikipedia
 |----------|-----------------------------------|--------------------------|--------------------------------|
 | click    | Click a button or link            | text of link, name, etc. |                                |
 | select   | Choose an option in select box    | option text              |                                |
-| visit    | Navigate firefox to a link        |                          |                                |
+| visit    | Navigate firefox to a link        | link url                 |                                |
 | fill\_in | Fill in a input box               | element name             |                                |
 | search   | Search page source using Nokogiri |                          | Returns Nokogiri::XML::Element |
 

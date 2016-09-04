@@ -86,6 +86,7 @@ driver.search_for_wikipedia
 ### Options
 
 | Name      | Argument                                      | Defalut     |
+|-----------|-----------------------------------------------|-------------|
 | :find\_by | :link\_text, :name, :id, :class, :css, :xpath | :link\_text |
 
 

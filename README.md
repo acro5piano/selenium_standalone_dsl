@@ -143,7 +143,7 @@ Imagine Web-based task execution, definition, csv-export and scheduling like Jen
 - [x] Fix module name. Dsl => DSL
 - [x] Defalut config
 - [x] Add API document
-- [ ] TravisCI
+- [x] TravisCI
 - [ ] Log
 
 ## Contributing

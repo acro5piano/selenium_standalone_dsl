@@ -23,11 +23,17 @@ Gem::Specification.new do |spec|
   # end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.test_files    = `git ls-files -- spec/*_spec.rb`.split("\n")
+  spec.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency 'selenium-webdriver'
+  spec.add_dependency 'nokogiri'
+  spec.add_dependency 'headless'
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "sinatra"
+  spec.add_development_dependency "pry"
 end

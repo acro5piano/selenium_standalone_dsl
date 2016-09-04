@@ -89,9 +89,6 @@ driver.search_for_wikipedia
 |-----------|-----------------------------------------------|-------------|
 | :find\_by | :link\_text, :name, :id, :class, :css, :xpath | :link\_text |
 
-
-
-
 ## Development
 
 ```sh

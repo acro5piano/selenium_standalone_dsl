@@ -81,7 +81,7 @@ bundle install --path vendor/bundle
 bundle exec rake install
 bundle exec rake spec
 ```
-    
+
 To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Roadmap
@@ -96,7 +96,7 @@ In my heart, `Selenium Spider` will have these features:
 
 ### Full JavaScript support
 
-Based on Selenium Standalone DSL, it comprehences JavaScript.
+Based on Selenium Standalone DSL which run Firefox headlessly, it comprehences JavaScript completely.
 
 ### PMC architecture
 
@@ -108,19 +108,20 @@ In PMC architecture, Page is for listing items and pagenation.
 
 Model is for extracting information from detail page and store data to database.
 
-Controller is for handle the above two.
+Controller is for handling the above two.
 
 ### Web-based task execution
 
 Scraping tasks are often multiply and difficult to arrange.
 
-Imagine Web-based task execution, definition, and scheduling like Jenkins.
+Imagine Web-based task execution, definition, csv-export and scheduling like Jenkins.
 
 ## TODO
 
 - [ ] Fix class name. Dsl => DSL
 - [ ] Log and config
 - [ ] TravisCI
+- [ ] Add API document
 
 ## Contributing
 

@@ -6,7 +6,7 @@ module SeleniumStandaloneDSL
                    user_agent: 'Selenium Standalone DSL', headless: false)
 
       if headless
-        Headless.new(reuse: false, destroy_at_exit: true).start
+        @headless = Headless.new(reuse: false, destroy_at_exit: true).start
       end
 
       # Extends timeout
@@ -109,6 +109,10 @@ module SeleniumStandaloneDSL
 
     def quit
       @driver.quit
+
+      if @headless
+        @headless.destroy
+      end
     end
   end
 end

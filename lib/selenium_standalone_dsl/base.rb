@@ -64,12 +64,12 @@ module SeleniumStandaloneDSL
       select.select_by :text, text
     end
 
-    def has_element?(method, selector)
-      if method == :text
+    def has_element?(selector, find_by: :link_text)
+      if [:text, :link_text].include?(find_by)
         @driver.page_source.match(selector) != nil
       else
         begin
-          @driver.find_element(method, selector).is_a? Selenium::WebDriver::Element
+          @driver.find_element(find_by, selector).is_a? Selenium::WebDriver::Element
         rescue Selenium::WebDriver::Error::NoSuchElementError
           false
         end

@@ -6,7 +6,8 @@ module SeleniumStandaloneDSL
                    user_agent: 'Selenium Standalone DSL', headless: false)
 
       if headless
-        @headless = Headless.new(reuse: false, destroy_at_exit: true).start
+        @headless = Headless.new(reuse: false, destroy_at_exit: true)
+        @headless.start
       end
 
       # Extends timeout

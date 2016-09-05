@@ -46,10 +46,10 @@ describe SeleniumStandaloneDSL::Base do
 
   it 'determine if the page has the text' do
     @driver.visit 'http://localhost:4567/'
-    expect(@driver.has_element?(:text, 'Hello')).to be true
-    expect(@driver.has_element?(:text, 'Hogehogehoge')).to be false
-    expect(@driver.has_element?(:class, 'title')).to be true
-    expect(@driver.has_element?(:class, 'titleIsNotBlank')).to be false
+    expect(@driver.has_element?('Hello')).to be true
+    expect(@driver.has_element?('Hogehogehoge')).to be false
+    expect(@driver.has_element?('title', find_by: :class)).to be true
+    expect(@driver.has_element?('titleIsNotBlank', find_by: :class)).to be false
   end
 
   it 'search with Nokogiri' do

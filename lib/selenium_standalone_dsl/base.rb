@@ -54,7 +54,7 @@ module SeleniumStandaloneDSL
       @driver.switch_to.alert.accept
     end
 
-    def select(text, from: nil, find_by: :name)
+    def select(text, select_by: :text, from: nil, find_by: :name)
       return if !from
 
       # For legacy sites using Frame
@@ -62,7 +62,7 @@ module SeleniumStandaloneDSL
         @driver.find_element(find_by, from)
       end
       select = Selenium::WebDriver::Support::Select.new(element)
-      select.select_by :text, text
+      select.select_by select_by, text
     end
 
     def has_element?(selector, find_by: :link_text)

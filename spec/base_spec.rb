@@ -42,6 +42,7 @@ describe SeleniumStandaloneDSL::Base do
     @driver.visit 'http://localhost:4567/select'
     expect { @driver.select('an option', from: 'select_box') }.not_to raise_error
     expect { @driver.select('an option', from: 'select_box', find_by: :name) }.not_to raise_error
+    expect { @driver.select('1', select_by: :value, from: 'select_box', find_by: :name) }.not_to raise_error
   end
 
   it 'determine if the page has the text' do

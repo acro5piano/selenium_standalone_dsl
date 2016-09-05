@@ -17,7 +17,7 @@ get '/alert' do
 end
 
 get '/select' do
-  return '<html><body><select name="select_box"><option>an option</option></select></body></html>'
+  return '<html><body><select name="select_box"><option value="1">an option</option></select></body></html>'
 end
 
 get '/search' do

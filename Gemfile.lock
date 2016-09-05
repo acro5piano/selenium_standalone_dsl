@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    selenium_standalone_dsl (0.1.6)
+    selenium_standalone_dsl (0.1.7)
       headless
       nokogiri
       selenium-webdriver

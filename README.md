@@ -23,6 +23,12 @@ If you want to run firefox headlessly, install Xvfb:
 sudo apt-get install xvfb
 ```
 
+Also on Arch Linux:
+
+```sh
+sudo pacman -S firefox xorg-server-xvfb
+```
+
 Add this line to your application's Gemfile:
 
 ```ruby

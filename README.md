@@ -150,7 +150,9 @@ Imagine Web-based task execution, definition, csv-export and scheduling like Jen
 - [x] Defalut config
 - [x] Add API document
 - [x] TravisCI
-- [ ] Log
+- [ ] CommonLogger
+- [ ] Add `current_url`
+
 
 ## Contributing
 
